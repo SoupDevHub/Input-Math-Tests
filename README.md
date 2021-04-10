@@ -1,2 +1,2 @@
 # Input-Math-Tests
-Random tests and calculations
+Weird tests and calculations
