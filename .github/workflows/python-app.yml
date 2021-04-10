@@ -34,3 +34,4 @@ jobs:
     - name: Run
       run: |
         python main.py
+        16
