@@ -1,4 +1,5 @@
 print(f"\t Loading Variables...")
+from random  import *
 name = input(" What is your name? ").lower().title()
 age = int(input(" How old are you? "))
 print(f" Hello {name}!")
@@ -27,3 +28,49 @@ for thing in things:
     else:
         things[thing] = input(' Another one of your favorite things: ')
 print(f'I love {things[0]}, {things[1]}, and {things[2]}!')
+
+print(f'I have a game for you')
+print(f'Try to guess what number im thinking of')
+print(f'You get 5 tries')
+print(f'Ill even give you hints!')
+
+bob = randint(1,100)
+
+turn = 1
+turnsleft = 7
+
+name = input("Welcome to the game, what is your name? ")
+
+while True:
+	print(f'\n{name.title()}, this is turn {turn}, you have {turnsleft} turns left')
+	turn += 1
+	turnsleft -= 1
+	player = input("Please pick a number from 1-100 ")
+	player = int(player)
+
+	if bob == player:
+		print("You guessed it! You win")
+		break
+	elif bob > player:
+		print("Higher")
+	else:
+		print("Lower")
+		
+	if turn == 8:
+		print("You ran out of turns!")
+		break		
+		
+print('''
+
+   _____                         ____                 _ 
+  / ____|                       / __ \               | |
+ | |  __  __ _ _ __ ___   ___  | |  | |_   _____ _ __| |
+ | | |_ |/ _` | '_ ` _ \ / _ \ | |  | \ \ / / _ \ '__| |
+ | |__| | (_| | | | | | |  __/ | |__| |\ V /  __/ |  |_|
+  \_____|\__,_|_| |_| |_|\___|  \____/  \_/ \___|_|  (_)
+                                                        
+                                                        
+
+''')		
+
+print(f'The winning number was {bob}')
