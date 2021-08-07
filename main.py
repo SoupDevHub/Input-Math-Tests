@@ -4,9 +4,9 @@ name = input(" What is your name? ").lower().title()
 age = int(input(" How old are you? "))
 print(f" Hello {name}!")
 
-print(f"\n\t Dog Years")
-print(f" 1 human year is 7 dog years.")
-dogAge = age * 7
+print(f"\n\t Cat Years")
+print(f" 1 human year is 3.2 cat years.")
+dogAge = age * 3.2
 print(f" {name}, you are {age} years old, that means that you are {dogAge} dog years old!")
 
 print(f"\n\t Cat Years")
